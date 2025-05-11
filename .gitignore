@@ -1,0 +1,4 @@
+myvenv/
+dataset/
+outputs/
+cat_dog_model.h5
