@@ -6,6 +6,7 @@ from pathlib import Path
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.applications.resnet50 import preprocess_input
 
 
 # ---------- ダイアログ関数 ----------
@@ -55,7 +56,8 @@ def classify_images(model, folder_path: str):
 
         # 前処理（学習時と同じ 224×224 & 0‑1 正規化）
         img = load_img(image_path, target_size=(224, 224))
-        img_array = img_to_array(img) / 255.0
+        img_array = img_to_array(img)
+        img_array = preprocess_input(img_array)  # ResNet50 用の前処理
         img_array = np.expand_dims(img_array, axis=0)
 
         # 予測
