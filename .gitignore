@@ -2,3 +2,4 @@ myvenv/
 dataset/
 outputs/
 *.h5
+*.txt
