@@ -17,7 +17,4 @@
 本リポジトリには、転移学習により精度99%を達成したモデルの構築過程（Jupyter Notebook）が含まれています。  
 ▶ [モデルの構築過程（Jupyter Notebook）](catdog_model_ResNet50_BATCH16_FT2_224.ipynb)
 
-学習済みモデルファイル（`.h5`）は容量の都合によりGitHubには含まれておりませんが、以下のリンクからダウンロードいただけます：
-▶ [学習済みモデル（Google Drive）](https://drive.google.com/file/d/1j1BUzn92D7bwKnDcihDD3hzEQhnBCRA2/view?usp=drive_link)
-
 ※ 練習用に作成したモデルであり、個人用途・ポートフォリオ閲覧用に限定しております。
